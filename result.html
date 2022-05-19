@@ -1,0 +1,91 @@
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta content="always" name="referrer">
+    <meta name="theme-color" content="#2932e1">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="any" mask="" href="//www.baidu.com/img/baidu_85beaf5496f291521eb75ba38eacbd87.svg">
+    <link rel="search" type="application/opensearchdescription+xml" href="/content-search.xml" title="百度搜索">
+    <title>can not take my eyes off you</title>
+    <style data-for="result" type="text/css" id="css_newi_result">
+        html, body {
+            height: 100%;
+        }
+        body {
+            color: #333;
+            background: #fff;
+            margin: 0;
+            font-family: arial;
+        }
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        .article p {
+            line-height: 1.4;
+            font-size: 27px;
+            letter-spacing: 15px;
+        }
+    </style>
+</head>
+
+<body link="#0000cc">
+    <audio id="music" autoplay="autoplay" loop="loop">
+        <source src="./bgMusic.mp3" type="audio/mpeg">
+    </audio>
+    <canvas height="925" width="1214" style="position: fixed;left: 0;top: 0;pointer-events: none;z-index: -1;"
+        id="canvas_sakura"></canvas>
+
+    <div class="box">
+        <div class="article">
+            <p>「回信」</p>
+            <p>在这猎户座 从银河坠落的夜晚</p>
+            <p>我给你钻石、海水</p>
+            <p>和一封风尘仆仆的回信</p>
+            <p>三月下起了雨</p>
+            <p>四月遍地蔷薇</p>
+            <p>五月来临之前，我们遥遥相望，犹如梦中</p>
+            <p>我不知道许多节气</p>
+            <p>却记得落笔是在谷雨</p>
+            <p>一朵形状奇怪的云飘过窗台</p>
+            <p>我摘下一片过曝的阳光放进墨水瓶</p>
+            <p>慢慢化开</p>
+            <p>于是你展开信封</p>
+            <p>洒落出一地光阴皎洁的夏天</p>
+        </div>
+    </div>
+
+    <script
+        src="https://dss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_65682a2.js"></script>
+    <script src="sakura.js"></script>
+    <script>
+        let loveWords = [
+            '如果我不讨你喜欢，你直接爱上我好了',
+            '打你名字再多遍都不费劲，输入法会自己跑出来',
+            '你喜欢星星吗？我才不摘给你，我要把它们藏进我的眼睛，每天对着你blingbling',
+            '你笑的时候真好看，像月牙里装满了星星',
+            '我不知道流星能飞多久，值不值得追求;我不知道樱花能开多久，值不值得等候。但我知道你就像烟花般美丽，像恒星般永恒，值得我用一生去保留',
+            '如果一滴水代表一个祝福，我送你一个东海;如果一颗星代表一份幸福，我送你一条银河;如果一棵树代表一份思念，我送你一片森林',
+            '不思进取，思你',
+            '时光还在，你还在',
+            '假如可以的话，我愿意花去生命中的每一分每一秒，陪着你',
+            '唱一首写不完的歌，荡漾着爱你的音符',
+            '对于世界而言，你是一个人;但是对于我而言，你是我的整个世界',
+        ];
+        function play() {
+            document.removeEventListener('click', play);
+            document.getElementById("music").play();
+        }
+        function showWords() {
+            alert("");
+        }
+        document.addEventListener('click', play);
+    </script>
+    <script src="./cursor-effect.js"></script>
+</body>
+
+</html>
